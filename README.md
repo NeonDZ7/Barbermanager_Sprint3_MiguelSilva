@@ -15,26 +15,38 @@ Gerenciamento e listagem de agendamentos
 📌 Backend (Java + Spring Boot)
 
 API REST organizada em controllers, models e repositories
+
 Persistência de dados usando Spring Data JPA
+
 Endpoints acessados pelo frontend usando JavaScript (fetch)
 
 📌 Frontend (HTML, CSS e JavaScript)
 
 Interface limpa e responsiva
+
 Consumo da API Java via JavaScript (fetch)
+
 Páginas conectadas à lógica do backend
+
 Separação clara entre estrutura (HTML), estilo (CSS) e requisições (JS)
 
 🛠️ Tecnologias Utilizadas
 Backend
 
 Java 17
+
 Spring Boot
+
 Spring Web
+
 Spring Data JPA
+
 Maven
+
 Frontend
+
 HTML5
+
 CSS3
 
 JavaScript (para consumo da API)

@@ -7,7 +7,9 @@ O BarberManager é um sistema simples e funcional para gerenciamento de barbeari
 📌 Cadastro e Gerenciamento
 
 Cadastro de clientes
+
 Cadastro de serviços
+
 Gerenciamento e listagem de agendamentos
 
 📌 Backend (Java + Spring Boot)

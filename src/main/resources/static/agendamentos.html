@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberManager - Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Agendamentos</h1>
+    <p>Gerencie os agendamentos da barbearia</p>
+</header>
+
+<nav>
+    <a href="/index.html">Início</a>
+    <a href="/clientes.html">Clientes</a>
+    <a href="/barbeiros.html">Barbeiros</a>
+    <a href="/relatorio.html">Relatórios</a>
+</nav>
+
+<form id="agendamentoForm">
+
+    <input type="hidden" id="agendamentoId">
+
+    <input type="text" id="nomeCliente" placeholder="Nome do Cliente" required>
+    <input type="text" id="servico" placeholder="Serviço" required>
+    <input type="datetime-local" id="dataHora" required>
+    <input type="number" id="preco" step="0.01" placeholder="Preço" required>
+    <input type="number" id="barbeiroId" placeholder="ID do Barbeiro" required>
+
+    <button type="submit" class="btn-add" id="btnSubmit">
+        Adicionar Agendamento
+    </button>
+
+    <button type="button" class="btn-save" id="btnSalvarEdicao" style="display:none;">
+        Salvar Edição
+    </button>
+
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Serviço</th>
+            <th>Data/Hora</th>
+            <th>Preço</th>
+            <th>Barbeiro ID</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="agendamentosTable"></tbody>
+</table>
+<script src="agendamentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberManager - Barbeiros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Barbeiros</h1>
+    <p>Gerencie os barbeiros da barbearia</p>
+</header>
+
+<nav>
+    <a href="/index.html">Início</a>
+    <a href="/clientes.html">Clientes</a>
+    <a href="/agendamentos.html">Agendamentos</a>
+    <a href="/relatorio.html">Relatórios</a>
+</nav>
+
+<form id="barbeiroForm">
+    <input type="hidden" id="barbeiroId">
+    <input type="text" id="nome" placeholder="Nome do barbeiro" required>
+    <input type="text" id="telefone" placeholder="Telefone" required>
+    <button type="submit" class="btn btn-add" id="btnSubmit">Adicionar Barbeiro</button>
+    <button type="button" class="btn btn-edit" id="btnSalvarEdicao" style="display:none;">Salvar Edição</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="barbeirosTable"></tbody>
+</table>
+
+<script src="barbeiros.js"></script>
+</body>
+</html>

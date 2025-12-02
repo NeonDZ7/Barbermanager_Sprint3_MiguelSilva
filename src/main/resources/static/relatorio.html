@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - BarberManager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Relatórios</h1>
+    <p>Selecione uma data para visualizar os agendamentos</p>
+</header>
+
+<nav>
+    <a href="/index.html">Início</a>
+    <a href="/clientes.html">Clientes</a>
+    <a href="/barbeiros.html">Barbeiros</a>
+    <a href="/agendamentos.html">Agendamentos</a>
+</nav>
+
+<section class="lista-dados">
+
+    <h2>Filtrar por Data</h2>
+    <input type="date" id="filtroData">
+    <button id="btnBuscar" class="btn btn-add">Buscar</button>
+
+    <h2 style="margin-top: 40px;">Agendamentos do Dia</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Serviço</th>
+                <th>Data/Hora</th>
+                <th>Preço</th>
+                <th>Barbeiro</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabelaRelatorio"></tbody>
+    </table>
+
+</section>
+
+<script src="relatorio.js"></script>
+</body>
+</html>
